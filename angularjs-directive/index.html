@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Development Boards Shop &mdash; AngularJS directvie example</title>
+    <link rel="stylesheet" href="../original-page/styles.css">
+    <script src="../original-page/scripts.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+
+    <div class="breadcrumbs">
+      <a href="#">Home</a>&nbsp;&rarr;&nbsp;
+      <a href="#">Products</a>&nbsp;&rarr;&nbsp;
+      <span>Development boards</span>
+    </div>
+
+    <h1>Development boards</h1>
+
+
+    <ul class="product-list">
+      <li>
+        <p>Raspberry Pi</p>
+        <img src="../original-page/images/pi.jpg" width="256px">
+      </li>
+      <li>
+        <p>Intel Edison</p>
+        <img src="../original-page/images/edison.png" width="256px">
+      </li>
+      <li>
+        <p>TI Launchpad</p>
+        <img src="../original-page/images/ti.jpg" width="256px">
+      </li>
+    </ul>
+
+    <div ng-app="ngAppDemo">
+      <div ng-controller="ngAppDemoController">
+        <remote-board-controls deviceInformation="test"></remote-board-controls>
+      </div>
+    </div>
+
+    <p>Images were downloaded from the Wikipedia</p>
+    <ul>
+      <li>
+        By <a href="//commons.wikimedia.org/wiki/User:DSP-user" title="User:DSP-user">DSP-user</a> - <span class="int-own-work" lang="en" xml:lang="en">Own work</span>, <a href="http://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, https://commons.wikimedia.org/w/index.php?curid=8680033
+      </li>
+      <li>
+        By <a href="//commons.wikimedia.org/wiki/User:Lucasbosch" title="User:Lucasbosch">Lucasbosch</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="http://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, https://commons.wikimedia.org/w/index.php?curid=34179985
+      </li>
+      <li>
+        By <a href="//commons.wikimedia.org/w/index.php?title=User:Mwilde2&amp;action=edit&amp;redlink=1" class="new" title="User:Mwilde2 (page does not exist)">Mwilde2</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="http://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, https://commons.wikimedia.org/w/index.php?curid=46312969
+      </li>
+    </ul>
+  </body>
+</html>
