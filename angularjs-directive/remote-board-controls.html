@@ -1,20 +1,23 @@
-<style type="text/css">
+  <style type="text/css">
   body {
-    background: #ffff00;
+    background-color: yellow;
   }
-</style>
-<form class="form">
-  <div class="form-group">
-    <label for="lcdText">LCD Text</label>
-    <input type="text" name="lcdText" id="lcdText">
-    <button type="button" class="btn btn-primary">Send</button>
+  </style>
+  <div class="well">
+  <form class="form">
+    <div class="form-group">
+      <label for="lcdText">LCD Text</label>
+      <input type="text" name="lcdText" id="lcdText" class="form-control">
+      <br>
+      <button type="button" class="btn btn-primary">Send</button>
+    </div>
+    <div class="form-group">
+      <label for="ledBrightness">LED Brightness control</label>
+      <input type="number" name="ledBrightness" id="ledBrightness" class="form-control" value="10">
+    </div>
+    <div class="form-group">
+      <input type="checkbox" name="servo" id="servo">&nbsp;
+      <label for="servo">Servo enabled?</label>
+    </div>
+  </form>
   </div>
-  <div class="form-group">
-    <label for="ledBrightness">LED Brightness control</label>
-    <input type="number" name="ledBrightness" id="ledBrightness">
-  </div>
-  <div class="form-group">
-    <label for="servo">Servo</label>
-    <input type="checkbox" name="servo" id="servo">
-  </div>
-</form>
