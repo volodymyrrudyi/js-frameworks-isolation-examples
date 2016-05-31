@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Development Boards Shop</title>
+  <link rel="../original-page/stylesheet" href="styles.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="../original-page/scripts.js"></script>
+  <script src="scripts.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Online DIY shop</a>
+      </div>
+      <!--/.navbar-collapse -->
+    </div>
+  </nav>
+
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Welcome to our online shop</h1>
+      <p>Find thousands of development boards, shields and components to build your next dream!
+      </p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-xs-8">
+    <div class="row">
+      <div class="col-xs-12">
+          <h2>Raspberry PI</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">
+        <img src="../original-page/images/pi.jpg" width="128px">
+        <div class="row text-center" style="margin-top:8px">
+          <a class="btn btn-success">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="col-xs-9">
+        The Raspberry Pi is a series of credit card-sized single-board computers
+        developed in the United Kingdom by the Raspberry Pi Foundation with
+        the intent to promote the teaching of basic computer science in schools
+         and developing countries. The original Raspberry Pi and Raspberry Pi 2
+         are manufactured in several board configurations through licensed
+         manufacturing agreements with Newark element14 (Premier Farnell),
+         RS Components and Egoman. The hardware is the same across all
+         manufacturers. The firmware is closed-source.
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>Intel Edison</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">
+        <img src="../original-page/images/edison.png" width="128px">
+        <div class="row text-center" style="margin-top:8px">
+          <a class="btn btn-success">Add to cart</a>
+        </div>
+      </div>
+
+      <div class="col-xs-9">
+        The Intel Edison is a tiny computer-on-module offered by Intel as a
+        development system for wearable devices and Internet of Things devices.
+        The system was initially announced to be the same size and shape as an
+        SD card and containing a dual-core Intel Quark x86 CPU at 400 MHz
+        communicating via Bluetooth and Wi-Fi. A later announcement changed
+        the CPU to a 22 nm Silvermont dual-core Intel Atom CPU, and in September
+        2014 a second version of Edison was shown at IDF, which was bigger and
+        thicker than a standard SD card.
+      </div>
+    </div>
+    <hr>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <h2>TI Launchpad</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">
+        <img src="../original-page/images/ti.jpg" width="128px">
+        <div class="row text-center" style="margin-top:8px">
+          <a class="btn btn-success" disabled>Out of stock</a>
+        </div>
+      </div>
+
+      <div class="col-xs-9">
+        he MSP430 can be used for low powered embedded devices. The current
+        drawn in idle mode can be less than 1 µA. The top CPU speed is 25 MHz.
+        It can be throttled back for lower power consumption. The MSP430 also
+        uses six different low-power modes, which can disable unneeded clocks
+        and CPU. Additionally, the MSP430 is capable of wake-up times below 1
+        microsecond, allowing the microcontroller to stay in sleep mode longer,
+        minimizing its average current consumption. The device comes in a
+        variety of configurations featuring the usual peripherals:
+        internal oscillator, timer including PWM, watchdog, USART, SPI,
+        I²C, 10/12/14/16/24-bit ADCs, and brownout reset circuitry.
+        Some less usual peripheral options include comparators
+        (that can be used with the timers to do simple ADC),
+        on-chip op-amps for signal conditioning, 12-bit DAC, LCD driver,
+        hardware multiplier, USB, and DMA for ADC results. Apart from some
+        older EPROM (MSP430E3xx) and high volume mask ROM (MSP430Cxxx) versions,
+        all of the devices are in-system programmable via JTAG
+        (full four-wire or Spy-Bi-Wire) or a built in bootstrap loader (BSL)
+        using UART such as RS232, or USB on devices with USB support.
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col-xs-4">
+    <div ng-app="ngAppDemo">
+      <div ng-controller="ngAppDemoController">
+        <remote-board-controls deviceInformation="test"></remote-board-controls>
+      </div>
+    </div>
+  </div>
+</div>
+    <hr>
+
+    <footer>
+      <p class="text-center">&copy; 2015 Online DIY shop</p>
+
+      <div class="row text-center">
+        <div class="col-xs-12">
+          <p>Images were downloaded from the Wikipedia</p>
+            <p>
+              By <a href="//commons.wikimedia.org/wiki/User:DSP-user" title="User:DSP-user">DSP-user</a> - <span class="int-own-work" lang="en" xml:lang="en">Own work</span>, <a href="http://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>,
+              https://commons.wikimedia.org/w/index.php?curid=8680033
+            </p>
+            <p>
+              By <a href="//commons.wikimedia.org/wiki/User:Lucasbosch" title="User:Lucasbosch">Lucasbosch</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="http://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>,
+              https://commons.wikimedia.org/w/index.php?curid=34179985
+            </p>
+            <p>
+              By <a href="//commons.wikimedia.org/w/index.php?title=User:Mwilde2&amp;action=edit&amp;redlink=1" class="new" title="User:Mwilde2 (page does not exist)">Mwilde2</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="http://creativecommons.org/licenses/by-sa/4.0"
+                title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, https://commons.wikimedia.org/w/index.php?curid=46312969
+            </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
