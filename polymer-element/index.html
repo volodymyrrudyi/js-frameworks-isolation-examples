@@ -5,12 +5,15 @@
   <meta charset="utf-8">
   <title>Development Boards Shop</title>
   <link rel="../original-page/stylesheet" href="styles.css">
-  <script src="../original-page/scripts.js"></script>
-  <script src="react.js"></script>
-  <script src="react-dom.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-
+  <script src="https://polygit2.appspot.com/components/webcomponentsjs/webcomponents-lite.js"></script>
+  <script>
+  /* this script must run before Polymer is imported */
+  window.Polymer = {
+    dom: 'shadow'
+  };
+</script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="import" href="board-remote-controls.html">
 </head>
 
 <body>
@@ -113,40 +116,7 @@
       </div>
 
       <div class="col-xs-4">
-        <div id="remote-control-app"></div>
-        <script type="text/babel">
-          var RemoteControlApp = React.createClass({
-            render: function(){
-              return <div>
-                <div class="well">
-                  <form class="form" id="control-form">
-                    <div class="form-group">
-                      <label for="lcdText">LCD Text</label>
-                      <input type="text" name="lcdText" id="lcdText" class="form-control" />
-                      <br/>
-                      <button type="button" class="btn btn-primary">Send</button>
-                    </div>
-                    <div class="form-group">
-                      <label for="ledBrightness">LED Brightness control</label>
-                      <input type="number" name="ledBrightness" id="ledBrightness" class="form-control" value="10" />
-                    </div>
-                    <div class="form-group">
-                      <input type="checkbox" name="servo" id="servo" />&nbsp;
-                      <label for="servo">Servo enabled?</label>
-                    </div>
-                  </form>
-                </div>
-              </div>;
-            }
-          });
-
-          ReactDOM.render(
-            <div>
-              <RemoteControlApp></RemoteControlApp>
-            </div>,
-            document.getElementById('remote-control-app')
-          );
-        </script>
+        <board-remote-controls ></board-remote-controls>
       </div>
     </div>
 

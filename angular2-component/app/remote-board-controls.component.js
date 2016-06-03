@@ -9,21 +9,19 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var remote_board_controls_component_1 = require('./remote-board-controls.component');
 var core_2 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
+var RemoteBoardControlsComponent = (function () {
+    function RemoteBoardControlsComponent() {
     }
-    AppComponent = __decorate([
+    RemoteBoardControlsComponent = __decorate([
         core_2.Component({
-            selector: 'remote-board-controls-app',
-            templateUrl: 'app/app.html',
-            encapsulation: core_1.ViewEncapsulation.Native,
-            directives: [remote_board_controls_component_1.RemoteBoardControlsComponent]
+            selector: 'remote-board-controls',
+            templateUrl: 'app/remote-board-controls.html',
+            encapsulation: core_1.ViewEncapsulation.Native
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], RemoteBoardControlsComponent);
+    return RemoteBoardControlsComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.RemoteBoardControlsComponent = RemoteBoardControlsComponent;
+//# sourceMappingURL=remote-board-controls.component.js.map
